@@ -1,0 +1,1394 @@
+@charset "utf-8";
+/* CSS Document */
+/* ========================================= */
+/* フルードイメージ */
+img{max-width: 100%;height:auto;}
+
+/* 全体共通 */
+h1{
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Noto Serif JP", serif;
+    color:#2d3931;
+    line-height:150%;
+    letter-spacing:0.5em;
+}
+h2{
+    font-size: 21px;
+    font-weight: bold;
+    font-family: "Noto Serif JP", serif;
+    color:#2d3931;
+    line-height:243%;
+    letter-spacing: 0.8em;
+}
+h3{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Noto Serif JP", serif;
+    color: #2d3931;
+    line-height: 100%;
+    letter-spacing:0.8em;
+}
+p{
+    font-size: 15px;
+    font-weight: normal;
+    font-family: "Noto Serif JP", serif;
+    color: #2d3931;
+    line-height: 253%;
+    letter-spacing:0.2em;
+}
+a:link{text-decoration: none;color:#2d3931;}
+a:visited {text-decoration: none;color:#2d3931;}
+/* 下層ページ共通 */
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.pan{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+    margin: 5% 15px;
+}
+.pan a{
+    text-decoration: underline;
+    color:#797148;
+}
+.pan a:hover {
+    color: #063B39;
+    text-decoration: none;
+}
+/* ============================================= */
+/*ヘッター*/
+header{
+width:100%;
+background-color:#ffff;
+justify-content: center;
+align-items: center;
+}
+
+nav{
+display: flex;
+gap:95px;
+}
+
+nav p {
+    font-size:12px;
+}
+
+
+.header_top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+   
+
+.header_side p{
+font-size: 13px;  
+}
+
+.header_left{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 5%;
+
+}
+
+.logo {
+    text-align: center;
+}
+
+/* クロスフェード */
+.fv { position: relative; overflow: hidden; }
+.fv-slides { position: relative; width: 100%; aspect-ratio: 16/9; }  /* 固定高にしたいなら height:520px; にしてOK */
+.fv-slides img{
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: none;
+}
+.fv-slides img.is-active{ display: block; }
+
+
+/* メイン */
+.top_main{
+    width:100%;
+    background-image: url("../img/TOP1.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 8%;
+}
+.top_main_big p{
+    max-width: fit-content;
+    height: fit-content;
+    margin: auto;
+    color: #F0EFED;
+    font-size: 48px;
+    z-index: 2;
+    line-height:3;
+    text-align: center;
+}
+/* スライダー */
+.bxslider-box{
+    width: 50%;
+    background-color: #F0EFED;
+}
+
+/* コンセプト */
+
+.concept_section_img{
+width: 50%;
+}
+
+.concept_section_img img {
+    width: 100%;  
+    height: auto; 
+    display: block;
+}
+
+.concept_section_sentence{
+    width: 50%;
+    height: auto;
+    background-color: #F0EFED;
+    padding-top:4%
+}
+
+.concept_section_sentence1 p{
+ max-width: fit-content;
+    height: fit-content;
+    margin: auto;
+    color: #2d3931;
+   font-size: 21px;
+   font-weight: bold;
+    z-index: 2;
+    line-height:3;
+    text-align: center;
+}
+
+.concept_section_sentence2 p{
+    max-width: fit-content;
+    height: fit-content;
+    margin: auto;
+    color: #2d3931;
+   font-size: 15px;
+    z-index: 2;
+    line-height:3;
+    text-align: center;
+}
+
+.concept_out{
+    display: flex;
+    margin-top: 10%;
+}
+
+.concept_section{
+    display: flex; 
+    justify-content: flex-end; 
+    width: 100%; 
+   margin-top: 10%; 
+}
+
+
+/* メニュー */
+.menu{
+    width:100%;
+    background-image: url("../img/menu1.png");
+    border: 1px solid #000;
+    background-size: cover;
+    padding-top: 90px;
+    margin-top: 10%;
+}
+.menu p{
+    font-weight: bold;
+}
+.menu p{
+    font-size: 21px;
+    text-align: center;
+}
+
+.menu-qa {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 593px;
+    /* width: 593px; */
+    border: 1px solid #797148;
+    margin-bottom: 10%;
+}
+.menu-q {
+    background-color: #063B39;
+    padding: 0.1% 5%;
+    border-bottom: 1px solid #797148;
+}
+.menu-q h3{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 253%;
+    letter-spacing:0.2em;
+    text-align: center;
+}
+.menu_out {
+  background-color: #fff;
+  padding:0.5% 5%;
+  display: flex;
+  text-align: center;
+  gap: 85px;
+}
+
+.menu_out p,
+.menu_out_under p {
+    font-size: 15px;
+}
+
+.menu_out_under{
+background-color: #fff;
+  display: flex;
+  text-align: center;  
+}
+
+.viewmore-txt2 {
+  position: relative; /* 疑似要素（::before）の基準にする */
+  overflow: hidden; /* 背景アニメーションがはみ出さないようにする */
+  text-decoration: none; /* 下線を消す */
+  display: inline-block; /* インライン要素をブロックのように扱う */
+  text-align: center; /* テキストを中央寄せ */
+  vertical-align: middle; /* 縦方向で他要素と整列 */
+}
+.viewmore-txt2 p {
+  position: relative; /* 疑似要素より前に配置するために設定 */
+  z-index: 3; /* 背景より前面に表示（::beforeの上） */
+  color: var(--btn-color); /* 初期はゴールド文字 */
+  transition: color 0.2s ease; /* ホバー時の色変化を滑らかに */
+  text-align: center; /* 中央寄せ */
+}
+/* ホバー時に文字色を白に変更 */
+.viewmore-txt2:hover p {
+  color: #fff; /* 背景が金色になるため文字を白に */
+}
+/* 疑似要素::beforeで背景アニメーションのベースを作成 */
+.viewmore-txt2::before {
+  content: ''; /* 疑似要素を表示するための必須指定 */
+  position: absolute; /* 親（.viewmore-txt）を基準に配置 */
+  z-index: 2; /* テキスト（z-index:3）の下に配置 */
+  transition: all 0.3s ease-out; /* 変化を滑らかに（※この指定は後の高さアニメにも影響） */
+}
+/* 背景の初期状態（非ホバー時） */
+.viewmore-txt2::before {
+  content: ''; /* 再度明示的に疑似要素を定義 */
+  position: absolute; /* 親要素の中に固定配置 */
+  bottom: 0; /* 下からスタート */
+  left: 0; /* 左端から配置 */
+  background: var(--btn-color); /* 背景色（ゴールド） */
+  width: 100%; /* 横幅はボタン全体に広げる */
+  height: 0; /* 初期状態では非表示（高さ0） */
+  transition: height 0.5s ease; /* ホバー時に高さが伸びるアニメーション */
+}
+/* ホバー時のアニメーション（下から上へ背景が広がる） */
+.viewmore-txt2:hover::before {
+  height: 100%; /* 高さを全体まで広げて塗りつぶす */
+}
+
+/*ニュース*/
+.news {
+   text-align: center; 
+   width: 100%; 
+   height: 525px;
+   background-color: #DDE7E0;
+   margin: 0 auto;
+   padding: 80px 0 80px 0;
+   margin-top:10%;
+}
+
+.news_top p {
+    font-size: 21px;
+    font-weight: bold;
+    color: #063B39;
+    text-align: center; 
+}
+
+.news_list_container {
+    width: 90%; 
+    max-width: 650px;
+    margin: 0 auto; 
+    text-align: left; 
+    margin-top: 1%;
+}
+
+.news_item {
+    margin-bottom: 80px; 
+    display: flex;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #797148;
+}
+
+.news_item a {
+    display: block; 
+    width: 100%
+}
+
+.news_item a p{
+    font-size: 15px; 
+    line-height: 1.8; 
+    word-break: break-word; 
+    overflow-wrap: break-word;
+    letter-spacing: normal;
+}
+.icon-info{
+    background-color: #063B39;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+    line-height: 1;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1); 
+    line-height:160%;
+}
+.icon-new{
+    background-color: #797148;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 9999px;
+    display: inline-block;
+    line-height: 1;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1); 
+    line-height:120%;
+}
+
+
+/*料金一覧*/
+.price{
+  margin: 10% auto 0 auto; 
+    width: 300px;
+}
+.c-btn{
+  cursor: pointer;
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+} 
+.c-btn {
+  background: #063B39;
+  border: 2px solid #063B39;
+  border-radius: 60px;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  max-width: 300px;
+  padding: 15px 40px;
+  text-align: center;
+  font-family: "Noto Serif JP", serif;
+}
+
+.c-btn.reverse:hover {
+  background: #fff;
+  color: #063B39;
+}
+/*フッター*/
+footer{
+    margin-top:10%;
+    width: 100%;
+    background-color: #063B39;
+    display: flex;
+}
+footer p{
+    color: #ffff;
+}
+.footer_right{
+    background-color: #ffff;
+    width: 28%;
+    display: flex;
+    margin: 2%;
+    position: relative;
+    box-sizing: border-box;
+}
+.footer_right p{
+    margin: 10px;
+    font-size:15px;
+    color:#2d3931;
+}
+.footer_right_right{
+    margin-right:3%;
+    
+}
+.footer_right_right p{
+    font-weight: bold;
+}
+.footer_rogo{
+/* position: absolute;
+top: 0;
+right: 0; */
+display: none;
+display: block;
+}
+
+.footer_nav{
+    margin: 0%;
+    width: 25%;
+    display: flex;
+    gap: 10%;
+    align-items: flex-end;
+    padding-bottom: 1%;
+}
+
+td{
+   width: 1%;
+}
+.footer_box{
+    width:100%;
+    margin: 2%;
+}
+
+.footer_box_1{
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Noto Serif JP", serif;
+}
+
+.footer_box_2{
+    font-size: 12px;
+    font-family: "Noto Serif JP", serif;
+}
+
+.Reservation_out{
+    margin:0%;
+    display: flex;
+    align-items: flex-end;
+    gap: 4%;
+    padding: 0 0 1% 17%;
+}
+/*ボタン*/
+.sample_btn {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 60px;
+  outline: none;
+  color: #ffff;
+  border:1px solid #797148;
+  background-color: #797148;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  font-family: "Noto Serif JP", serif;
+}
+.sample_btn:hover {
+  color: #797148;
+  border:1px solid #797148;
+  background-color: #ffff;
+}
+
+/* 以下はレイアウト調整用 */
+body{
+  vertical-align:middle; 
+  padding: 50px 0;
+  text-align: center;
+}
+
+/*------about--------*/
+/* 02about */
+/* キービジュアル */
+.key-about{
+    padding: 10%;
+    background-image: url(../img/dairiseki_about.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.concept_concept_out{
+    display: flex;
+    margin-top: 10%;
+    position: relative;
+}
+
+.concept_section_sentence_page{
+    width: 50%;
+    background-color: #F0EFED;
+    padding-top:2%
+}
+
+.info-section-main__side {
+    position: absolute;
+    top: 0;
+    left: 48px;
+    writing-mode: vertical-lr;
+    font-size: 18px;
+    color: #364b3d;
+    letter-spacing: 2px;
+}
+.font-firasans {
+    font-family: Fira sans;
+    font-weight: medium;
+}
+
+.info-section-main__side {
+position: absolute;
+top: 7%;
+left: 1%;
+font-weight: bold;
+font-family: "Noto Serif JP", serif;
+color: #ffff;
+letter-spacing:0.7em;
+}
+
+/*Dr紹介*/
+.Dr_introduction{
+    margin-top: 10%;
+}
+.Dr_img{
+    margin: 0 3% 3% 3%;
+}
+.Dr_Career_1 p{
+    line-height: normal;
+    letter-spacing: 0.5em;
+}
+.Dr_text{
+     display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.Dr_Career{
+    padding-left: 22%;
+    margin-bottom: 10%;
+}
+
+/*治療方針*/
+.section_about{
+    width:100%;
+    background-image: url(..//img/concept1-4.png);
+    background-size: cover;
+    padding: 10% 0 10% 0;
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section_about_top{
+    border: 10px solid #797148;
+    background: #ffff;
+    width: 70%;
+   
+}
+
+.section_about_top p {
+    font-weight: bold;
+    color: #063B39;
+    text-align: center;
+    margin: 0 auto; 
+    margin: 2%;
+}
+
+/*料金表*/
+/* キービジュアル */
+.key-price{
+    padding: 10%;
+    background-image: url(../img/dairiseki_about.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_right1{
+    background-color: #ffff;
+    width: 60%;
+    display: flex;
+    margin: 2%;
+}
+
+.potenza-table {
+    width: 90%;
+    border-collapse: collapse; /* セル間の二重線をなくす */
+    font-family: "Noto Serif JP", serif;
+    /* その他必要に応じて max-width を設定 */
+    text-align: center;
+    margin: 0 auto; 
+    margin: 0 5% 5% 5%;
+}
+
+/* すべての td 要素の基本スタイル */
+.potenza-table td {
+    border: 1px solid #000;
+    padding: 2%;
+    vertical-align: middle; /* セル内の文字を垂直方向の中央に揃える */
+}
+
+/* ポテンツァのセル (左端の大きなセル) */
+.main-potenza {
+    background-color: #063B39; /* 濃い緑 */
+    color: #fff;
+    width: 50%; /* 列幅の調整 */
+    font-size: 18px;
+    text-align: center;
+}
+
+/* 肝斑・美白、AIチップのセル (中央のサブメニュー) */
+.sub-menu {
+    background-color: #8b7d5f; /* 茶色がかった色 */
+    color: #fff;
+    width: 25%; /* 列幅の調整 */
+    text-align: center;
+}
+
+/* オーダーメイドのセル (2行目) */
+.custom-item {
+    background-color: #8b7d5f; /* 他のサブメニューと同じ色 */
+    color: #fff;
+    text-align: center;
+}
+
+/* 価格の詳細セル (右端のセル) */
+.price-detail {
+    background-color: #f7f7f7; /* 明るい背景色 */
+    color: #000;
+    width: 50%; /* 列幅の調整 */
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: end;
+}
+.price-note{
+    font-size: 14px; 
+    text-align: left; 
+    margin-bottom: 20px;
+    padding: 0 0 0 5%;
+}
+
+.price-heading{
+    padding: 0 0 0 5%;
+}
+
+.payment-method{
+    text-align: left;
+    padding: 0 0 0 5%;
+}
+
+/* ブレイクポイント */
+@media(width<=700px){
+    .container {
+        width: 80%; /* タブレットでは幅80% */
+        margin: 0 auto;
+    }
+    .sidebar {
+        display: block; /* サイドバーを表示 */
+    }
+    
+}
+
+/* ===================================================== */
+/* 04faq */
+/* キービジュアル */
+.key-faq{
+    /* width: 100%; */
+    padding: 10%;
+    background-image: url(../img/dairiseki_faq.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* コンテンツ */
+.faq-qa {
+    margin: 0 auto;
+    width: 50%;
+    border: 1px solid #797148;
+    margin-bottom: 15px;
+}
+.faq-q {
+    background-color: #063B39;
+    padding: 1px 5%;
+    border-bottom: 1px solid #797148;
+}
+.faq-q h3{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 253%;
+    letter-spacing:0.2em;
+}
+.faq-a {
+  background-color: #fff;
+  padding: 5px 5%;
+}
+.faq-a p{
+    line-height: 167%;
+    text-align: start;
+}
+/* 05access */
+/* キービジュアル */
+.key-access{
+    /* width: 100%; */
+    padding: 10%;
+    background-image: url(../img/dairiseki_access.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* コンテンツ */
+/* 情報 */
+.access-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+}
+.access-info-txt-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+}
+.access-info-txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.access-info-title{
+    background-color: #063B39;
+    width: 107px;
+    padding: 0 15px;
+}
+.access-info-title p{
+    color: #fff;
+    text-align: center;
+}
+/* 道順 */
+.access-directions{
+    margin-top: 100px;
+}
+.access-directions-items{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8%;
+    margin: 20px 0;
+}
+.access-directions-item{
+    width: 33%;
+}
+.access-directions-item p{
+    line-height: 167%;
+}
+/* 06news */
+/* キービジュアル */
+.key-news{
+    /* width: 100%; */
+    padding: 10%;
+    background-image: url(../img/dairiseki_news.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* コンテンツ */
+.news-item{
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #797148;
+}
+.news-item h3{
+    color: #063B39;
+}
+.news-item-sub{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    margin-bottom: 15px;
+}
+.icon-info{
+    background-color: #063B39;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+    line-height: 1;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1); 
+    line-height:160%;
+}
+.icon-new{
+    background-color: #797148;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 9999px;
+    display: inline-block;
+    line-height: 1;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1); 
+    line-height:120%;
+}
+.news-item-txt{
+    margin: 3% 0;
+}
+/* ボタン */
+/* ボタン全体のカラーを変数で管理（サイト全体で色を統一しやすくする） */
+:root {
+  --btn-color: #797148; /* ボタンのベースカラー（ゴールド系） */
+}
+.viewmore-btn {
+  text-align: right; 
+  margin-bottom: 10px; 
+}
+/* ボタンの基本スタイル（外枠の設定） */
+.viewmore-txt {
+  position: relative; /* 疑似要素（::before）の基準にする */
+  overflow: hidden; /* 背景アニメーションがはみ出さないようにする */
+  text-decoration: none; /* 下線を消す */
+  display: inline-block; /* インライン要素をブロックのように扱う */
+  width: 25%; /* ボタンの横幅を指定（例：親幅の25%） */
+  text-align: center; /* テキストを中央寄せ */
+  vertical-align: middle; /* 縦方向で他要素と整列 */
+}
+/* ボタン内のテキスト（<p>）のスタイル */
+.viewmore-txt p {
+  position: relative; /* 疑似要素より前に配置するために設定 */
+  z-index: 3; /* 背景より前面に表示（::beforeの上） */
+  color: var(--btn-color); /* 初期はゴールド文字 */
+  transition: color 0.2s ease; /* ホバー時の色変化を滑らかに */
+  text-align: center; /* 中央寄せ */
+}
+/* ホバー時に文字色を白に変更 */
+.viewmore-txt:hover p {
+  color: #fff; /* 背景が金色になるため文字を白に */
+}
+/* 疑似要素::beforeで背景アニメーションのベースを作成 */
+.viewmore-txt::before {
+  content: ''; /* 疑似要素を表示するための必須指定 */
+  position: absolute; /* 親（.viewmore-txt）を基準に配置 */
+  z-index: 2; /* テキスト（z-index:3）の下に配置 */
+  transition: all 0.3s ease-out; /* 変化を滑らかに（※この指定は後の高さアニメにも影響） */
+}
+/* 背景の初期状態（非ホバー時） */
+.viewmore-txt::before {
+  content: ''; /* 再度明示的に疑似要素を定義 */
+  position: absolute; /* 親要素の中に固定配置 */
+  bottom: 0; /* 下からスタート */
+  left: 0; /* 左端から配置 */
+  background: var(--btn-color); /* 背景色（ゴールド） */
+  width: 100%; /* 横幅はボタン全体に広げる */
+  height: 0; /* 初期状態では非表示（高さ0） */
+  transition: height 0.5s ease; /* ホバー時に高さが伸びるアニメーション */
+}
+/* ホバー時のアニメーション（下から上へ背景が広がる） */
+.viewmore-txt:hover::before {
+  height: 100%; /* 高さを全体まで広げて塗りつぶす */
+}
+
+/* 07reservation */
+/* キービジュアル */
+.key-reservation{
+    /* width: 100%; */
+    padding: 10%;
+    background-image: url(../img/dairiseki_reservation.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* コンテンツ */
+.reservation-txt h2{
+    width: 100%;
+    background-color: #063B39;
+    color: #fff;
+    text-align: center;
+    margin: 2% 0;
+}
+.reservation-txt h3{
+    color: #063B39;
+    margin-top: 3%;
+    text-align: center;
+}
+.reservation-txt p{
+    text-align: center;
+    margin-bottom: 3%;
+}
+/* 予約フォーム */
+.reserve-form{
+    width: 75%;
+    margin: 0 auto;
+    border: 1px solid #2d3931;
+    padding: 3%;
+}
+.reserve-form-title{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.reserve-form-title h3{
+    background-color: #f0efed;
+    padding: 5px 0 5px 15px;
+    margin-bottom: 15px;
+}
+.icon-req{
+    background-color: #797148;
+    color: #fff;
+    font-size: 15px;
+    padding: 2px 0 3px 7px;
+    display: inline-block;
+    line-height: 1;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1); 
+    line-height:160%;
+}
+.reserve-form-a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    margin-bottom: 15px;
+}
+.radio-btn{
+    border: 1px solid #000;
+    width: 30%;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: "Noto Serif JP", serif;
+    color: #2d3931;
+    line-height: 253%;
+    letter-spacing:0.2em;
+    padding-left: 15px;
+    text-align: start;
+}
+/* カウンセリング・施術内容 */
+.reserve-form-subtitle{
+    margin: 0 auto;
+    margin: 0 5%;
+    margin-bottom: 15px;
+}
+.setumei{
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.nayami p{
+    padding-left: 15px;
+    background-color: #f0efed;
+}
+.nayami-a-box{
+    width: 25%;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: "Noto Serif JP", serif;
+    color: #2d3931;
+    line-height: 253%;
+    letter-spacing:0.2em;
+}
+.nayami-sk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    text-align: start;
+}
+.nayami-ns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    text-align: start;
+}
+/* 施術詳細 */
+.sezyutu p{
+    padding-left: 15px;
+    background-color: #f0efed;
+    margin-bottom: 15px;
+}
+.sezyutu-a-subtitle{
+    width: 100%;
+    border: 1px solid #000;
+}
+.sezyutu-a p{
+    background-color: #DDE7E0;
+    width: 10%;
+}
+.skin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sezyutu-a-box{
+    width: 40%;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: "Noto Serif JP", serif;
+    color: #2d3931;
+    line-height: 253%;
+    letter-spacing:0.2em;
+    text-align: start;
+}
+.sezyutu-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+.sezyutu-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+.tyunyu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.datumou{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sonota{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 相談内容 */
+.icon-free{
+    background-color: #fff;
+    font-size: 15px;
+    padding: 2px 0 3px 7px;
+    display: inline-block;
+    line-height: 1;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1); 
+    line-height:160%;
+}
+.textarea{
+    width: 80%;
+}
+/* 予約希望日 */
+.reserve-form-day{
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+}
+.reserve-form-day p{
+    width: 25%;
+}
+/* お客様情報 */
+.customer-info{
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3%;
+}
+.customer-info p{
+    width: 25%;
+}
+.textarea-customer{
+    width: 25%;
+}
+.reserve-form h2{
+    margin: 0 auto;
+    width: 50%;
+    background-color: #797148;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* 08q-laser */
+/* キービジュアル */
+.key-q{
+    /* width: 100%; */
+    padding: 10%;
+    background-image: url(../img/dairiseki_q.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* コンテンツ */
+.q-content-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%; 
+}
+.q-content-title {
+    margin: 0 auto;
+    margin: 3% 0;
+    padding: 0 10%;
+}
+.q-content-title p{
+    text-align: left;
+    margin: 4% 0;
+}
+.q-content-title ul{
+    font-size: 15px;
+    font-weight: normal;
+    font-family: "Noto Serif JP", serif;
+    color: #2d3931;
+    line-height: 253%;
+    letter-spacing:0.2em;
+    margin: 4% 0;
+}
+.q-content-row{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    gap: 5%;
+}
+.q-keika{
+    text-align: center;
+    padding: 15px;
+}
+.q-content-title a{
+    text-decoration: underline;
+    color:#797148;
+}
+.q-content-title a:hover {
+    color: #2d3931;
+    text-decoration: none;
+}
+/* セクション全体 */
+.q-content {
+  margin-bottom: 48px;
+  text-align: center; /* タイトルも説明も中央揃えに */
+}
+/* タイトル全体（線＋帯） */
+.bar-title {
+  position: relative;
+  text-align: center;
+  margin: 24px 0 28px;
+  padding: 10px 0;
+}
+
+/* 横線（タイトルの背面） */
+.bar-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: #c7bca3;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+/* 緑の帯（中央タイトル） */
+.bar-title__label {
+  position: relative;
+  width: 40%;
+  z-index: 1;
+  display: inline-block;
+  background: #063B39;
+  color: #fff;
+  padding: 10px 28px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  font-family: "Noto Serif JP", serif;
+}
+/* 段落 */
+.q-content p {
+  font-size: 14px;
+  line-height: 2;
+  color: #2d3931;
+  text-align: left; /* 本文は左揃えにしたい場合ここで変更 */
+  max-width: 600px;
+  margin: 0 auto; /* 中央寄せ */
+}
+
+
+/* 09privacy */
+/* キービジュアル */
+.key-privacy{
+    /* width: 100%; */
+    padding: 10%;
+    background-image: url(../img/dairiseki_privacy.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* コンテンツ */
+.privacy-item{
+    margin: 0 5%;
+}
+.privacy-section{
+    margin: 5% 0;
+}
+.privacy-section p{
+    margin-top: 15px;
+}
+.privacy-section li{
+    margin-left: 4%;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: "Noto Serif JP", serif;
+    color: #2d3931;
+    line-height: 253%;
+    letter-spacing:0.2em;
+    text-align: start;
+}
+
+/*ハンバーガーメニュー*/
+.drawer-nav{
+ background-color:#063B39;
+}
+
+.drawer-menu {
+  font-size: 13px;
+  font-family: "Noto Serif JP", serif;
+  color:#2d3931;
+  line-height:200%;
+  letter-spacing: 0.5em;
+  margin: 0 auto;
+}
+
+.Reservation_out2
+{
+    display: block;
+    margin-left: 8%;
+}
+
+.Reservation2{
+    display:flex;
+    gap: 2%;
+    margin:8% 0 0 8%;
+}
+
+
+/* メディアクエリ */
+
+@media screen and (max-width: 768px) {
+
+    /* ヘッダーのレイアウト崩れ対策 */
+    header {
+        position: relative; /* ハンバーガーメニューがメインになるため相対位置に */
+        padding: 5% 0;
+        height: auto;
+    }
+    .header_top {
+        display: none; /* モバイルでは通常のナビゲーションを非表示（ハンバーガーメニューを使うため） */
+    }
+    .header_left {
+        display: none; /* TelとReservationボタンを非表示 */
+    }
+    .logo {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    /* ハンバーガーメニューがメインのナビゲーションになるため、元のナビは隠します */
+    nav {
+        display: none; 
+    }
+    
+    /* コンセプトセクションのレスポンシブ対応 */
+    .concept_out {
+        flex-direction: column; /* PCの横並びを縦並び（画像→テキスト）に変更 */
+        margin-top: 5%;
+    }
+
+    .bxslider-box,
+    .concept_section_sentence {
+        width: 100%; /* 幅を100%にして縦に並べる */
+        padding-top: 5%; /* モバイル向けにパディングを調整 */
+    }
+    .concept_section_sentence {
+        padding-bottom: 5%;
+    }
+
+    /* 「私らしい肌へ」の縦伸び対策 */
+    .concept_section_sentence1 p,
+    .concept_section_sentence2 p {
+        line-height: 180%; /* 行の高さを縮めて縦伸びを解消 */
+        font-size: 16px; 
+    }
+    .concept_section_sentence2 p {
+        padding: 0 5%; /* 左右にパディングを追加して見やすく */
+    }
+    
+    /* メニューセクションのレスポンシブ対応 */
+    .menu-qa {
+        width: 90%; /* モバイルでも90%を維持し、画面幅に合わせて縮小 */
+        margin-bottom: 5%;
+    }
+    .menu_out,
+    .menu_out_under {
+        flex-direction: column; /* 縦並びにして見やすく */
+        gap: 20px;
+        padding: 5% 5%;
+    }
+    .menu_out_1, .menu_out_2, .menu_out_３, .menu_out_４ {
+        display: flex; /* 縦に積むか、横に並べるか */
+        flex-direction: column; 
+    }
+    .menu_out_1 img, .menu_out_2 img {
+        width: 50%; /* 画像のサイズを調整 */
+        margin: 0 auto 10px auto;
+    }
+
+    /* フッターのレイアウト崩れ対策 */
+    footer {
+        flex-direction: column; /* 縦並びにする */
+        padding: 5%;
+    }
+    .footer_right {
+        width: 100%; /* 幅を100%に */
+        margin: 0;
+        padding: 5% 0;
+    }
+    .footer_nav {
+        width: 100%;
+        gap: 5%;
+        justify-content: space-around;
+        padding: 5% 0;
+    }
+    .Reservation_out {
+        width: 100%;
+        justify-content: space-around;
+        padding: 5% 0;
+    }
+    .Reservation_out .Reservation {
+        margin-left: 0; 
+    }
+.concept_concept_out{
+    display: block;
+    width: 100%;
+}
+
+.concept_section_img {
+        width: 100%;      
+        display: flex;    
+        justify-content: center;
+        position: relative;
+    }
+
+.Dr_text{
+    display: block;
+    text-align: center;
+}
+
+.Dr_text p{
+    text-align: center;
+}
+
+}
+
+@media(width<360px){
+/* メニュー */
+
+.menu-qa {
+    margin: 0 auto;
+    width: 100%;
+    border: 1px solid #797148;
+    margin-bottom: 10%;
+}
+.menu-q {
+    width: 100%;
+    background-color: #063B39;
+    padding: 0.1% 5%;
+    border-bottom: 1px solid #797148;
+}
+
+
+
+
+}

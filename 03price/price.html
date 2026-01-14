@@ -1,0 +1,402 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>タイトル</title>
+<link href="../css/reset.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<!-- フォント -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+<!-- ブレークポイント -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--jQuery本体-->
+<script src="../js/jquery-1.11.2.min.js"></script>
+<!--トップスラーダー-->
+<link href="../js/drawer-master/drawer-master/dist/css/drawer.min.css" rel="stylesheet">
+<script src="../js/drawer-master/drawer-master/dist/js/drawer.min.js"></script>
+<!--iscroll-->
+<script src="../js/iscroll-master/build/iscroll.js"></script>
+<!--ready関数-->
+<script>
+$(function(){
+    $('.drawer').drawer();
+});
+</script>
+
+</head>
+
+<body>
+    <!--ヘッター-->
+<header>
+
+<div class="logo"><a href="../index.html"><img src="../img/rogo.png" alt=""></a>
+</div>
+
+<div class="header_top">
+    <nav>
+        <div><a href="../02about/about.html"><p>About</p></a></div>
+        <div><a href="../03price/price.html"><p>Price</p></a></div>
+        <div><a href="../04faq/faq.html"><p>FAQ</p></a></div>
+        <div><a href="../05access/access.html"><p>Access</p></a></div>
+    </nav>
+    <div class="header_left">
+        <div class="header_side">
+        <p>Tel　0120-888-888</p>
+        <p>受付時間　10:00～19:00</p>
+        </div>
+        <div class="Reservation"><a class="sample_btn" href="../07reservation/reservation.html">Reservation</a>
+        </div>
+    </div>
+</div>
+</header>
+<!-- キービジュアル -->
+    <div class="key-price">
+        <h1>
+            Price
+        </h1>
+    </div>
+<!-- パンくずリスト -->
+    <div class="pan">
+        <p><a href="../own_clinic.html">Home</a></p>
+        <p>-</p>
+        <p>Price</p>
+    </div>
+<!--料金表-->
+<h2 class="price-heading">診察料</h2>
+ <div class="table-wrapper">
+    <table class="potenza-table">
+         <tr>
+           <td class="main-potenza">初診料</td>
+            <td class="price-detail">￥2,000<br>
+         </tr>
+         <tr>
+           <td class="main-potenza">再診料</td>
+           <td class="price-detail">￥1,000</td>
+         </tr>
+    </table>
+</div>
+
+
+<h2 class="price-heading">スキン</h2>
+<div class="table-wrapper">
+    <table class="potenza-table">
+        <tr>
+            <td rowspan="3" class="main-potenza">ポテンツァ</td>
+            <td class="sub-menu">肝斑・美白</td>
+            <td class="price-detail">
+                全顔 1回　¥60,000<br>
+                全顔 5回　¥240,000<br>
+                (1回あたり ¥48,000)
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="sub-menu">オーダーメイド</td>
+            <td class="price-detail">
+                全顔 1回(CICA鎮静パック込)　¥100,000
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="sub-menu">AIチップ</td>
+            <td class="price-detail">
+                1回 ¥30,000
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table-wrapper">
+    <table class="potenza-table">
+        <tr>
+            <td rowspan="2" class="main-potenza">ピーリング</td>
+            <td class="sub-menu">マッサージピール</td>
+            <td class="price-detail">
+                全顔　¥20,000
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="sub-menu">リバースピール</td>
+            <td class="price-detail">
+                全顔　¥35,000
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table-wrapper">
+    <table class="potenza-table">
+        <tr>
+            <td class="main-potenza">トーニング（ピコ）</td>
+            
+            <td class="price-detail">
+               全顔 1回　¥28,000<br>
+全顔 5回　¥112,000<br>
+全顔 10回　¥196,000
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table-wrapper">
+    <table class="potenza-table">
+        <tr>
+            <td rowspan="2" class="main-potenza">シミ取り</td>
+            <td class="sub-menu">Qスイッチ<br>ルビーレーザー</td>
+            <td class="price-detail">
+                一ヶ所（5mm以下）¥11,000<br>
+一ヶ所（5mm以上）¥22,000
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="sub-menu">ピコスポット</td>
+            <td class="price-detail">
+                一ヶ所（５mm以下）¥11,000<br>
+一ヶ所（５mm以上）¥22,000
+            </td>
+        </tr>
+    </table>
+</div>
+
+<h2 class="price-heading">注入</h2>
+<div class="table-wrapper">
+    <table class="potenza-table">
+        <tr>
+            <td rowspan="3" class="main-potenza">ヒアルロン酸</td>
+            <td class="price-detail">
+                涙袋/唇　¥65,000 
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="price-detail">
+                こめかみ/ほうれい線/頬コケ　¥65,000 
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="price-detail">
+                顎　¥65,000 
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="table-wrapper">
+    <table class="potenza-table">
+        <tr>
+            <td rowspan="3" class="main-potenza">ボトックス</td>
+            <td class="price-detail">
+                額 / 眉間 / 目尻 / 目の下 / 顎 / バニーライン / 口角 / ガミースマイル / 口唇上<br>
+各1箇所　¥14,000
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="price-detail">
+                シワ予防セット（額 /眉間 / 目尻 / 目の下）¥42,000
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="price-detail">
+                ワキ　¥55,000
+            </td>
+        </tr>
+    </table>
+</div>
+
+<h2 class="price-heading">脱毛</h2>
+<div class="table-wrapper">
+    <table class="potenza-table">
+        <tr>
+            <td rowspan="2" class="main-potenza">顔</td>
+            <td class="sub-menu">全顔</td>
+            <td class="price-detail">
+                ￥13,500
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="sub-menu">鼻下</td>
+            <td class="price-detail">
+                ￥3,750
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="table-wrapper">
+    <table class="potenza-table">
+        <tr>
+            <td class="main-potenza">ワキ</td>
+            
+            <td class="price-detail">
+               ¥2,500
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="table-wrapper">
+    <table class="potenza-table">
+        <tr>
+            <td class="main-potenza">VIO</td>
+            
+            <td class="price-detail">
+               ¥13,500
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="table-wrapper">
+    <table class="potenza-table">
+        <tr>
+            <td class="main-potenza">全身</td>
+            
+            <td class="price-detail">
+               ¥58,000
+            </td>
+        </tr>
+    </table>
+</div>
+<h2 class="price-heading">その他</h2>
+<div class="table-wrapper">
+    <table class="potenza-table">
+        <tr>
+            <td rowspan="3" class="main-potenza">内服</td>
+            <td class="sub-menu">シナール</td>
+            <td class="price-detail">
+                ¥2,970
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="sub-menu">トラネキサム酸</td>
+            <td class="price-detail">
+                ¥3,190
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="sub-menu">ユベラ</td>
+            <td class="price-detail">
+                ¥2,970
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="table-wrapper">
+    <table class="potenza-table">
+        <tr>
+            <td rowspan="4" class="main-potenza">点滴</td>
+            <td class="sub-menu">美白点滴</td>
+            <td class="price-detail">
+                ￥5,500
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="sub-menu">白玉点滴</td>
+            <td class="price-detail">
+                ￥6,600
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="sub-menu">疲労回復点滴</td>
+            <td class="price-detail">
+                ￥4,500
+            </td>
+        </tr>
+        <tr>
+            <td class="sub-menu">ニキビ点滴</td>
+            <td class="price-detail">
+                ￥4,500
+            </td>
+        </tr>
+    </table>
+</div>
+<section class="price-info-section">
+    <div class="price-note">
+        ※ 初回カウンセリング料：¥2,000 (施術をお受けになった場合は無料)<br>
+        ※ 上記はあくまで目安です。詳細な料金はカウンセリングにて肌状態を確認し、ご提案させていただきます。
+    </div>
+    
+    <div class="payment-method">
+        <img src="../img/price-pay.png" alt="支払い方法一覧">
+    </div>
+</section>
+
+<!-- フッター -->
+<footer>
+ <div class="footer_right">
+    <table class="footer_box">
+         <tr>
+           <td class="footer_box_1">Open</td>
+            <td class="footer_box_2">完全予約制<br>10:00〜19:00</td> 
+        </tr>
+         <tr>
+           <td class="footer_box_1">Address</td>
+           <td class="footer_box_2">〒888-8888<br>東京都渋谷区代官山3丁目8-8　TAビル8F </td>
+        </tr>
+        <tr>
+           <td class="footer_box_1">Tel</td>
+           <td class="footer_box_2">0120-888-8888</td>
+        </tr>
+        <tr>
+            <td class="footer_box_1">Mail</td>
+            <td class="footer_box_2">info@kyuenclinic.com</td>  
+        </tr>
+    </table>
+    <div class="footer_rogo">
+    <img src="../img/rogo.png" width="70px" height="70px" alt="ロゴ"></a>
+</div>
+</div>
+
+<div class="footer_nav">
+    <div><a href="../02about/about.html"><p>About</p></a>
+    </div>
+    <div><a href="../03price/price.html"><p>Price</p></a>
+    </div>
+    <div><a href="../04faq/faq.html"><p>FAQ</p></a>
+    </div>
+    <div><a href="../05access/access.html"><p>Access</p></a>
+    </div>
+</div>
+<div class="Reservation_out">
+    <div class="Reservation"><a href="../07reservation/reservation.html"><a class="sample_btn" href="#">Reservation</a></a>
+    </div>
+    <div class="IG"><a href=""><img src="../img/footer-IG.png" alt=""></a>
+    </div>
+    <div class="LINE"><a href=""><img src="../img/footer-LINE.png" alt=""></a>
+    </div>
+</div>
+</footer>
+
+<!--ハンバーガーメニュー-->
+<body class="drawer drawer--left">
+  <header role="banner">
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+    <nav class="drawer-nav" role="navigation">
+      <ul class="drawer-menu">
+        <li><a class="drawer-brand" href="#">Own Clinic</a></li>
+        <li><a class="drawer-menu-item" href="02about/about.html">About</a></li>
+        <li><a class="drawer-menu-item" href="03price/price.html">Price</a></li>
+        <li><a class="drawer-menu-item" href="04faq/faq.html">FAQ</a></li>
+        <li><a class="drawer-menu-item" href="05access/access.html">Access</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main role="main">
+    <!-- Page content -->
+  </main>
+</body>
+
+</body>
+
+</html>

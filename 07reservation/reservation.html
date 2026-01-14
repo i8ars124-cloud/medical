@@ -1,0 +1,319 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>タイトル</title>
+<link href="../css/reset.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<!-- フォント -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+<!-- ブレークポイント -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--jQuery本体-->
+<script src="../js/jquery-1.11.2.min.js"></script>
+<!--トップスラーダー-->
+<link href="../js/drawer-master/drawer-master/dist/css/drawer.min.css" rel="stylesheet">
+<script src="../js/drawer-master/drawer-master/dist/js/drawer.min.js"></script>
+<!--iscroll-->
+<script src="../js/iscroll-master/build/iscroll.js"></script>
+<!--ready関数-->
+<script>
+$(function(){
+    $('.drawer').drawer();
+});
+</script>
+
+</head>
+
+<body>
+<!-- ヘッダー -->
+   <header>
+
+<div class="logo"><a href="../index.html"><img src="../img/rogo.png" alt=""></a>
+</div>
+
+<div class="header_top">
+    <nav>
+        <div><a href="../02about/about.html"><p>About</p></a></div>
+        <div><a href="../03price/price.html"><p>Price</p></a></div>
+        <div><a href="../04faq/faq.html"><p>FAQ</p></a></div>
+        <div><a href="../05access/access.html"><p>Access</p></a></div>
+    </nav>
+    <div class="header_left">
+        <div class="header_side">
+        <p>Tel　0120-888-888</p>
+        <p>受付時間　10:00～19:00</p>
+        </div>
+       <div class="Reservation"><a class="sample_btn" href="../07reservation/reservation.html">Reservation</a>
+        </div>
+    </div>
+</div>
+</header>
+<!-- キービジュアル -->
+    <div class="key-reservation">
+        <h1>
+            Reservation
+        </h1>
+    </div>
+<!-- パンくずリスト -->
+    <div class="pan">
+        <p><a href="../own_clinic.html">Home</a></p>
+        <p>-</p>
+        <p>Reservation</p>
+    </div>
+<!-- コンテンツ -->
+    <div class="wrapper">
+        <section class="reservation-txt">
+            <h2>お電話でのご予約</h2>
+            <h3>Tel　0120-888-888</h3>
+            <p>受付時間　10:00～19:00</p>
+        </section>
+        <section class="reservation-txt">
+            <h2>メールでのご予約</h2>
+            <p>入力いただいたご連絡先へ、後ほど当院よりご連絡いたします。<br>当院からのご連絡後、ご予約が確定いたします。<br>お急ぎの方は、お電話でもご予約承ります。</p>
+        </section>        
+    </div>
+    <!-- 予約フォーム -->
+    <section class="reserve-form">
+    <!-- ご来院回数 -->
+    <div class="reserve-form-title">
+      <h3>ご来院回数<span class="icon-req">必須</span></h3>
+      <div class="reserve-form-a">
+        <div class="radio-btn">
+          <input type="radio" name="visit" value="first" required>
+          <span>はじめて</span>
+        </div>
+        <div class="radio-btn">
+            <input type="radio" name="visit" value="repeat">
+            <span>２回目以上</span>
+        </div>
+      </div>
+    </div>
+    <!-- ご予約内容 -->
+    <div class="reserve-form-title">
+      <h3>ご予約内容<span class="icon-req">必須</span></h3>
+      <div class="reserve-form-a">
+        <div class="radio-btn">
+          <input type="radio" name="menu" value="#" required>
+          <span>カウンセリング</span>
+        </div>
+        <div class="radio-btn">
+            <input type="radio" name="menu" value="#">
+            <span>施術</span>
+        </div>
+      </div>
+    </div>
+    <!-- カウンセリング・施術内容 -->
+    <div class="reserve-form-title">
+      <h3>カウンセリング・施術内容<span class="icon-req">必須</span></h3>
+      <p class="setumei">カウンセリング・施術の内容を以下からお選びください。</p>
+      <div class="reserve-form-subtitle">
+        <div class="nayami">
+          <p>お悩み</p>
+          <div class="nayami-a">
+            <div class="nayami-sk">
+              <div class="nayami-a-box">
+                <label class="choice-check"><input type="checkbox" name="concern[]" value="spot"><span>シミ・肝斑</span></label>
+              </div>
+              <div class="nayami-a-box">
+                <label class="choice-check"><input type="checkbox" name="concern[]" value="pore"><span>毛穴</span></label>
+              </div>
+            </div>
+            <div class="nayami-ns">
+              <div class="nayami-a-box">
+                <label class="choice-check"><input type="checkbox" name="concern[]" value="acne"><span>ニキビ</span></label>
+              </div>
+              <div class="nayami-a-box">
+                <label class="choice-check"><input type="checkbox" name="concern[]" value="wrinkle"><span>シワ</span></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sezyutu">
+          <p>施術詳細</p>
+          <div class="sezyutu-a">
+            <div class="skin">
+              <p>スキン<p>
+              <div class="sezyutu-a-subtitle">
+                <div class="sezyutu-top">
+                  <div class="sezyutu-a-box">
+                    <label class="choice-check"><input type="checkbox" name="concern[]" value="spot"><span>ポテンツァ</span></label>
+                  </div>
+                  <div class="sezyutu-a-box">
+                    <label class="choice-check"><input type="checkbox" name="concern[]" value="pore"><span>ピーリング</span></label>
+                  </div>
+                </div>
+                <div class="sezyutu-bottom">
+                  <div class="sezyutu-a-box">
+                    <label class="choice-check"><input type="checkbox" name="concern[]" value="acne"><span>トーニング（ピコ）</span></label>
+                  </div>
+                  <div class="sezyutu-a-box">
+                    <label class="choice-check"><input type="checkbox" name="concern[]" value="wrinkle"><span>シミ取り（Q）</span></label>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <div class="tyunyu">
+              <p>注入<p>
+              <div class="sezyutu-a-subtitle">
+                <div class="sezyutu-top">
+                  <div class="sezyutu-a-box">
+                    <label class="choice-check"><input type="checkbox" name="concern[]" value="spot"><span>ヒアルロン酸</span></label>
+                  </div>
+                  <div class="sezyutu-a-box">
+                    <label class="choice-check"><input type="checkbox" name="concern[]" value="pore"><span>ボトックス</span></label>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <div class="datumou">
+              <p>脱毛<p>
+              <div class="sezyutu-a-subtitle">
+                <div class="sezyutu-top">
+                  <div class="sezyutu-a-box">
+                    <label class="choice-check"><input type="checkbox" name="concern[]" value="spot"><span>全身</span></label>
+                  </div>
+                  <div class="sezyutu-a-box">
+                    <label class="choice-check"><input type="checkbox" name="concern[]" value="pore"><span>部分</span></label>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <div class="datumou">
+              <p>その他<p>
+              <div class="sezyutu-a-subtitle">
+                <div class="sezyutu-top">
+                  <div class="sezyutu-a-box">
+                    <label class="choice-check"><input type="checkbox" name="concern[]" value="spot"><span>内服</span></label>
+                  </div>
+                  <div class="sezyutu-a-box">
+                    <label class="choice-check"><input type="checkbox" name="concern[]" value="pore"><span>点滴</span></label>
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+    <!-- ご相談内容 -->
+    <div class="reserve-form-title">
+      <h3>ご予約内容<span class="icon-free">任意</span></h3>
+      <div class="reserve-form-a">
+        <textarea class="textarea" name="message" rows="5" placeholder="例：◯◯先生で、ヒアルロン酸を注入したい。"></textarea>
+      </div>
+    </div>    
+    <!-- ご予約希望日 -->
+    <div class="reserve-form-title">
+      <h3>ご予約希望日<span class="icon-req">必須</span></h3>
+      <div class="reserve-form-day">
+        <p>希望日時①</p>
+        <input name="date" type="date" />
+        <input type="time" min="09:00" max="17:00">
+      </div>
+      <div class="reserve-form-day">
+        <p>希望日時②</p>
+        <input name="date" type="date" />
+        <input type="time" min="09:00" max="17:00">
+      </div>
+      <div class="reserve-form-day">
+        <p>希望日時③</p>
+        <input name="date" type="date" />
+        <input type="time" min="09:00" max="17:00">
+      </div>      
+    </div>  
+    <!-- お客様情報 -->
+    <div class="reserve-form-title">
+      <h3>お客様情報<span class="icon-req">必須</span></h3>
+      <div class="customer-info">
+        <p>お名前</p>
+        <textarea class="textarea-customer" name="message" rows="1" placeholder="姓"></textarea>
+        <textarea class="textarea-customer" name="message" rows="1" placeholder="名"></textarea>
+      </div>
+      <div class="customer-info">
+        <p>フリガナ</p>
+        <textarea class="textarea-customer" name="message" rows="1" placeholder="セイ"></textarea>
+        <textarea class="textarea-customer" name="message" rows="1" placeholder="メイ"></textarea>
+      </div>   
+      <div class="customer-info">
+        <p>電話番号</p>
+        <textarea class="textarea-customer" name="message" rows="1" placeholder="080-888-888"></textarea>
+      </div>   
+      <div class="customer-info">
+        <p>メールアドレス</p>
+        <textarea class="textarea-customer" name="message" rows="1" placeholder="xxx.xxx@gmail.com"></textarea>
+      </div>     
+    </div> 
+  <a href="../07reservation/reservation.html"><h2>入力内容を確認する</h2></a>  
+</section> 
+<!-- フッター -->
+<footer>
+ <div class="footer_right">
+    <table class="footer_box">
+         <tr>
+           <td class="footer_box_1">Open</td>
+            <td class="footer_box_2">完全予約制<br>10:00〜19:00</td> 
+        </tr>
+         <tr>
+           <td class="footer_box_1">Address</td>
+           <td class="footer_box_2">〒888-8888<br>東京都渋谷区代官山3丁目8-8　TAビル8F </td>
+        </tr>
+        <tr>
+           <td class="footer_box_1">Tel</td>
+           <td class="footer_box_2">0120-888-8888</td>
+        </tr>
+        <tr>
+            <td class="footer_box_1">Mail</td>
+            <td class="footer_box_2">info@kyuenclinic.com</td>  
+        </tr>
+    </table>
+    <div class="footer_rogo">
+    <img src="../img/rogo.png" width="70px" height="70px" alt="ロゴ"></a>
+</div>
+</div>
+
+<div class="footer_nav">
+    <div><a href="../02about/about.html"><p>About</p></a>
+    </div>
+    <div><a href="../03price/price.html"><p>Price</p></a>
+    </div>
+    <div><a href="../04faq/faq.html"><p>FAQ</p></a>
+    </div>
+    <div><a href="../05access/access.html"><p>Access</p></a>
+    </div>
+</div>
+<div class="Reservation_out">
+    <div class="Reservation"><a href="../07reservation/reservation.html"><a class="sample_btn" href="#">Reservation</a></a>
+    </div>
+    <div class="IG"><a href=""><img src="../img/footer-IG.png" alt=""></a>
+    </div>
+    <div class="LINE"><a href=""><img src="../img/footer-LINE.png" alt=""></a>
+    </div>
+</div>
+</footer>
+<!--ハンバーガーメニュー-->
+<body class="drawer drawer--left">
+  <header role="banner">
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+    <nav class="drawer-nav" role="navigation">
+      <ul class="drawer-menu">
+        <li><a class="drawer-brand" href="#">Own Clinic</a></li>
+        <li><a class="drawer-menu-item" href="02about/about.html">About</a></li>
+        <li><a class="drawer-menu-item" href="03price/price.html">Price</a></li>
+        <li><a class="drawer-menu-item" href="04faq/faq.html">FAQ</a></li>
+        <li><a class="drawer-menu-item" href="05access/access.html">Access</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main role="main">
+    <!-- Page content -->
+  </main>
+</body>
+</body>
+
+</html>
